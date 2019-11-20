@@ -2,10 +2,12 @@
 - name: change permission
   hosts:
   Tasks:
-    - name: Apply full control
-      win_acl: 
-        user: User_cwk
-        Path: c:\Temp\test.conf
-        rights: FullControl
-        type: allow
-        state: present
+  - name: Remove FullControl AccessRule for IIS_IUSRS
+    win_acl:
+      path: c:\Temp\test.conf
+      user: User_cwk
+      rights: FullControl
+      type: allow
+      state: absent
+      inherit: ContainerInherit, ObjectInherit
+      propagation: 'None'
