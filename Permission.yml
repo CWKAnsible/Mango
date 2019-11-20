@@ -2,7 +2,7 @@
 - name: change permission
   hosts: all
   tasks:
-  - name: Remove FullControl AccessRule for User_cwk
+  - name: Add FullControl AccessRule for User_cwk
     win_acl:
       path: c:\Temp\test.conf
       user: user_cwk
