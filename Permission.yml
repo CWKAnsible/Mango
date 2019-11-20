@@ -1,6 +1,6 @@
 ---
 - name: change permission
-  hosts:
+  hosts: all
   Tasks:
   - name: Remove FullControl AccessRule for IIS_IUSRS
     win_acl:
