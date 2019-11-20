@@ -1,0 +1,8 @@
+---
+- name: Creating a foldedr
+  hosts: all
+  tasks:
+  - name: Create a folder and subfolder
+    win_file:
+      path: c:\Temp\Folder\subfolder
+      stage: directory
