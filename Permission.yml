@@ -5,7 +5,7 @@
   - name: Remove FullControl AccessRule for User_cwk
     win_acl:
       path: c:\Temp\test.conf
-      user: User_cwk
+      user: user_cwk
       rights: FullControl
       type: allow
       
