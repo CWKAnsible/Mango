@@ -1,0 +1,9 @@
+---
+- name: change permission
+  hosts: all
+  tasks:
+  - name: Create a new group
+    win_group:
+        name: deploy
+        description: Deploy Group
+        state: present
