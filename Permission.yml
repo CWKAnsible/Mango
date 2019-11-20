@@ -1,0 +1,11 @@
+---
+- name: change permission
+  hosts:
+  Tasks:
+    - name: Apply full control
+      win_acl: 
+        user: User_cwk
+        Path: c:\Temp\test.conf
+        rights: FullControl
+        type: allow
+        state: present
