@@ -1,0 +1,8 @@
+---
+- name: Add user
+  hosts: all
+  tasks:
+    - name: Add the user 'user_global' with a specific uid and a primary group of 'admin'
+      user:
+        name: user_global
+        group: Deploy
