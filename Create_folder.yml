@@ -4,5 +4,5 @@
   tasks:
   - name: Create a folder and subfolder
     win_file:
-      path: c:\Temp\Folder\subfolder
+      path: C:\Temp\Folder\subfolder
       stage: directory
