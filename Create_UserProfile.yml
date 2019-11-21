@@ -4,5 +4,5 @@
   tasks:
     - name: Create profile for 'user_cwk2'
       win_user_profile:
-      username: user_cwk2
-      state: present
+        username: user_cwk2
+        state: present
