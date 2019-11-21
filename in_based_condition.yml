@@ -13,8 +13,6 @@
     win_feature:
       name: "{{my_service}}"
       state: present
-      include_sub_features: yes
-      include_management_fools: yes
     when: ansible_facts['distribution'] in supported_distros
 ...
 
