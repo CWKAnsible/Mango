@@ -18,6 +18,6 @@
       debug:
         msg: no one can stop me, hahahahha
   - name: This is a task
-      debug:
-        msg: Hello World
+    debug:
+      msg: Hello World
 ...
