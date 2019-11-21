@@ -13,5 +13,5 @@
     when: run_my_task
     register: feature_output
   - name: Reboot if installing Web-Server feature requires it 
-    wiin_reboot:
+    win_reboot:
     when: feature_output.reboot_required
