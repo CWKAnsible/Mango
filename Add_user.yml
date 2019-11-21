@@ -3,8 +3,9 @@
   hosts: all
   tasks:
     - name: Add the user 'user_global' to deploy
-      user:
-        name: user_global
-        group: deploy
-        append: yes
-        
+      win_group_membership:
+        name: deploy
+        members:
+          - user_global
+        state: present
+
